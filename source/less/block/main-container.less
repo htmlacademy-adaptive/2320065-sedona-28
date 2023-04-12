@@ -1,4 +1,21 @@
 .main-container {
-  background-image: url("../img/index/back-mobile.jpg.jpg");
+  background-image: url("../img/index/back-mobile.png");
   background-repeat: no-repeat;
+  min-height: 389px;
+  padding-top: 1px;
+  position: relative;
+}
+
+.main-container__welcome {
+  display: block;
+  margin: 89px auto 117px;
+}
+
+.main-container::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/index/divider.svg");
+  width: 320px;
+  height: 57px;
+  top: 332px;
 }
