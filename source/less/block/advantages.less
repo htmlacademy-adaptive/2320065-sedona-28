@@ -1,5 +1,6 @@
 .advantages__list {
   list-style: none;
+  padding: 0;
 }
 
 .advantages__description--color {
@@ -7,19 +8,89 @@
   background-color: #ffffff;
 }
 
+.advantages__title--location1 {
+  margin: 0 auto 35px;
+  width: 260px;
+  text-align: center;
+}
+
+.advantages__description--location1 {
+  margin: 0 auto 32px;
+  width: 260px;
+  text-align: center;
+}
+
+.advantages__item--city {
+  padding-top: 1px;
+}
+
 .advantages__picture {
   background-color: #81b3d2;
   color: #ffffff;
+  padding-top: 1px;
+  position: relative;
 }
 
-.advantages__title {
-  margin: 0 auto;
+.advantages__picture::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/index/divider1.svg");
+  width: 320px;
+  height: 37px;
+  top: -10px;
+}
+
+.advantages__title--location2 {
+  margin: 54px auto 11px;
   width: 260px;
   text-align: center;
 }
 
-.advantages__description {
+.advantages__number {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto 17px;
+  width: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.advantages__number::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 1px;
+  top: 11px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.advantages__number::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 1px;
+  top: 11px;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.advantages__description--location2 {
   margin: 0 auto;
   width: 260px;
   text-align: center;
+  padding-bottom: 40px;
+}
+
+.advantages__photo-city {
+  background-color: #81b3d2;
+  min-height: 260px;
+  min-width: 320px;
+  color: #ffffff;
+}
+
+.advantages__picture1 {
+  background-color: #81b3d2;
+  color: #ffffff;
 }
