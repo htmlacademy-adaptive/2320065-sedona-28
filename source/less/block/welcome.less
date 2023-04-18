@@ -1,22 +1,24 @@
-/*.main-container {
+.welcome {
+  min-height: 389px;
   background-image: url("../img/index/back-mobile.png");
   background-repeat: no-repeat;
-  min-height: 389px;
+  background-size: 100% 100%;
   padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #81b3d2;
   position: relative;
 }
-*/
-.main-container__welcome {
-  margin: 0;
-  padding: 0;
-}
 
-/*.main-container::after {
+.welcome::after {
   position: absolute;
   content: "";
   background-image: url("../img/index/divider.svg");
   width: 320px;
   height: 57px;
-  top: 332px;
+  bottom: 0;
 }
-*/
+
+.welcome__inscription {
+  display: block;
+  margin: 88px auto 30px;
+}
