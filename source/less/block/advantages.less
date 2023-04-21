@@ -33,10 +33,13 @@
 .advantages__picture-city::after {
   position: absolute;
   content: "";
-  background-image: url("../../img/index/divider1.svg");
-  width: 320px;
+  background-image: url("../../img/index/whitecopy.svg");
   height: 37px;
-  top: -10px;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .advantages__title--location-city {
@@ -191,4 +194,23 @@
   margin: 0 auto 28px;
   width: 260px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__picture-city::after {
+    display: none;
+  }
+
+  .advantages__title--location-rubric {
+    width: 484px;
+  }
+
+  .advantages__description--location-rubric {
+    width: 484px;
+  }
+
+  .advantages__cause {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
